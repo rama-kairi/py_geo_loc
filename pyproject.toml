@@ -1,0 +1,32 @@
+# pyproject.toml
+
+[build-system]
+requires      = ["setuptools>=61.0.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "py_geo_loc"
+version = "1.0.0"
+description = "A Python Package to get the latitude and longitude of a location"
+readme = "README.md"
+authors = [{ name = "Ramananda Kairi", email = "ramanandakairi@gmail.com" }]
+license = { file = "LICENSE" }
+classifiers = [
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+]
+keywords = ["location", "longitude", "latitude", "geo", "geolocation", "geocoding", "geocoding-api"]
+dependencies = [
+    "requests>=2.28.0",
+]
+requires-python = ">=3.8"
+
+[project.optional-dependencies]
+dev = ["black", "bumpver", "isort", "pip-tools", "pytest"]
+
+[project.urls]
+Homepage = "https://github.com/rama-kairi/py_geo_loc"
+
+[project.scripts]
+realpython = "reader.__main__:main"
