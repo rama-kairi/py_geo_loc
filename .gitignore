@@ -23,6 +23,9 @@ __init__.pyc
 
 \*.so
 
+# py_geo_loc.egg-info
+py_geo_loc.egg-info/
+
 # Distribution / packaging
 
 .Python
